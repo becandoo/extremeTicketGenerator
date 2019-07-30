@@ -1,11 +1,11 @@
 <div class="grid-x grid-padding-x ticket">
     <div class="large-12 medium-12 cell">
-        <h5>Extreme Ticket Generator</h5>
-        <form>
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell">
-                    <label>Greeting</label>
-                    <input type="text" placeholder="Greeting" id="greeting"/>
+                    <h5>Phone Greeting</h5>
+                    <div class="callout secondary">
+                        <p id="greeting"></p>
+                    </div>
                 </div>
             </div>
             <div class="grid-x grid-padding-x">
@@ -101,19 +101,23 @@
             <div class="grid-x grid-padding-x">
                 <div class="large-6 cell">
                     <label>Issue</label>
-                    <textarea placeholder="Issue..." id="issue"></textarea>
+                    <textarea placeholder="Issue..." id="issue" rows="8"></textarea>
                 </div>
                 <div class="large-6 cell">
                     <label>Troubleshooting steps completed</label>
-                    <textarea placeholder="Troubleshooting performed by the site..." id="troubleshooting"></textarea>
+                    <textarea placeholder="Troubleshooting performed by the site..." id="troubleshooting" rows="8"></textarea>
                 </div>
             </div>
             <div class="grid-x grid-padding-x">
                 <div class="large-12 cell">
                     <label>Comments/Notes</label>
-                    <textarea placeholder="Enter additional comments here..." id="comment"></textarea>
+                    <textarea placeholder="Enter additional comments here..." id="comment" rows="6"></textarea>
                 </div>
             </div>
-        </form>
+            <div class="grid-x grid-padding-x">
+                <div class="large-12 cell">
+                    <button class="button primary" id="generateOutput" style="float:right;">Generate Output</button>
+                </div>
+            </div>
     </div>
 </div>
