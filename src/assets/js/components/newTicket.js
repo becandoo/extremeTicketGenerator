@@ -32,28 +32,35 @@ loadGreeting(greeting);
 
 function generateOutput(){
     let fname = document.getElementById('fname').value;
+    ticket.fname = fname;
     let lname = document.getElementById('lname').value;
-    //console.log(fname);
-    //console.log(lname);
-    let state = document.getElementById('state').options[document.getElementById('state').selectedIndex].value;
-    //console.log(state);
-    let site_id = document.getElementById('site_id').value;
-    //console.log(site_id);
-    let role = document.getElementById('role').options[document.getElementById('role').selectedIndex].value;
-    //console.log(role);
-    let telephone = document.getElementById('telephone').value;
-    //console.log(telephone);
-    let email = document.getElementById('email').value;
-    //console.log(email);
-    let issue = document.getElementById('issue').value;
-    //console.log(issue);
-    let troubleshooting = document.getElementById('troubleshooting').value;
-    //console.log(troubleshooting);
-    let comments = document.getElementById('comment').value;
-    //console.log(comments);
+    ticket.lname = lname;
 
+    let state = document.getElementById('state').options[document.getElementById('state').selectedIndex].value;
+    ticket.state = state;
+    let site_id = document.getElementById('site_id').value;
+    ticket.site_id = site_id;
+    let role = document.getElementById('role').options[document.getElementById('role').selectedIndex].value;
+
+    let telephone = document.getElementById('telephone').value;
+
+    let email = document.getElementById('email').value;
+
+    let issue = document.getElementById('issue').value;
+
+    let troubleshooting = document.getElementById('troubleshooting').value;
+
+    let comments = document.getElementById('comment').value;
+
+    insertOutput();
 };
 
 document.getElementById('generateOutput').onclick =  function(){
     generateOutput();
+};
+
+function insertOutput(){
+    console.log(ticket.name());
+    let outputBox = document.getElementById('output');
+    
 };
