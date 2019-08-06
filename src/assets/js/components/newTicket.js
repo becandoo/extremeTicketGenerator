@@ -35,23 +35,23 @@ function generateOutput(){
     ticket.fname = fname;
     let lname = document.getElementById('lname').value;
     ticket.lname = lname;
-
+    
     let state = document.getElementById('state').options[document.getElementById('state').selectedIndex].value;
     ticket.state = state;
     let site_id = document.getElementById('site_id').value;
     ticket.site_id = site_id;
     let role = document.getElementById('role').options[document.getElementById('role').selectedIndex].value;
-
+    ticket.role = role;
     let telephone = document.getElementById('telephone').value;
-
+    ticket.telephone = telephone;
     let email = document.getElementById('email').value;
-
+    ticket.email = email;
     let issue = document.getElementById('issue').value;
-
+    ticket.issue = issue;
     let troubleshooting = document.getElementById('troubleshooting').value;
-
+    ticket.troubleshooting_steps_completed = troubleshooting;
     let comments = document.getElementById('comment').value;
-
+    ticket.comments = comments;
     insertOutput();
 };
 
